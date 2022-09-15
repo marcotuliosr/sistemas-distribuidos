@@ -18,16 +18,12 @@ public class Cliente {
 
             String envio;
 
-            BufferedReader teclado = new BufferedReader(new
-
-                    InputStreamReader(System.in));
-
+            BufferedReader teclado = new BufferedReader(new InputStreamReader(System.in));
             System.out.print("> ");
             envio = teclado.readLine();
 
             while (!envio.equalsIgnoreCase("")) {
                 byte[] buffer = envio.getBytes();
-
                 DatagramPacket msg = new DatagramPacket(buffer, buffer.length, dest, 4545);
                 s.send(msg);
                 DatagramPacket resposta = new DatagramPacket(new byte[512], 512);
