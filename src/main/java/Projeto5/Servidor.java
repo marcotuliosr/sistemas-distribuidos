@@ -28,6 +28,7 @@ public class Servidor {
                 for (int i = 0; i < recebe.getLength(); i++) {
                     System.out.print((char) recebe.getData()[i]);
                 }
+
                 System.out.println();
 
                 DatagramPacket resp = new DatagramPacket(recebe.getData(), recebe.getLength(), recebe.getAddress(), recebe.getPort());

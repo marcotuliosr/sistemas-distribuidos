@@ -29,6 +29,7 @@ public class Cliente {
                 DatagramPacket resposta = new DatagramPacket(new byte[512], 512);
                 s.receive(resposta);
 
+
                 for (int i = 0; i < resposta.getLength(); i++) {
                     System.out.print((char) resposta.getData()[i]);
                 }
