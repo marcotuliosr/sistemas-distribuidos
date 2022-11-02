@@ -5,12 +5,10 @@
  * Project Name : sistemas-distribuidos
  */
 
-package Projeto4;
+package Projeto04;
 
 import java.io.*;
 import java.net.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class Cliente extends Thread {
     private static boolean done = false;

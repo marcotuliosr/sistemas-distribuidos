@@ -5,7 +5,7 @@
  * Project Name : sistemas-distribuidos
  */
 
-package Projeto2;
+package Projeto01;
 
-public class Servidor {
+public class Cliente {
 }

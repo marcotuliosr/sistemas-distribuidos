@@ -5,7 +5,7 @@
  * Project Name : sistemas-distribuidos
  */
 
-package Projeto5;
+package Projeto05;
 
 import java.io.*;
 import java.net.*;

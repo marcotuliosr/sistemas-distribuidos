@@ -5,7 +5,7 @@
  * Project Name : sistemas-distribuidos
  */
 
-package Projeto4;
+package Projeto04;
 
 import java.io.*;
 import java.net.*;
@@ -35,7 +35,7 @@ public class Servidor extends Thread {
                 t.start();
             }
         } catch (IOException ex) {
-            Logger.getLogger(Projeto4.Servidor.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Projeto04.Servidor.class.getName()).log(Level.SEVERE, null, ex);
         }
 
     }
@@ -61,12 +61,12 @@ public class Servidor extends Thread {
             clientes.remove(saida);
             conexao.close();
         } catch (IOException ex) {
-            Logger.getLogger(Projeto4.Servidor.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Projeto04.Servidor.class.getName()).log(Level.SEVERE, null, ex);
         } finally {
             try {
                 entrada.close();
             } catch (IOException ex) {
-                Logger.getLogger(Projeto4.Servidor.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Projeto04.Servidor.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }
